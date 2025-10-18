@@ -622,7 +622,8 @@ ul li ul li a:hover {
   margin-right: 50px;
 }
 .about-us-text img{
-  width: 80px;
+  width: 85px;
+  margin-bottom: 20px;
 } 
  .about-us-text h1{
    color: #0f2239;
@@ -1139,7 +1140,6 @@ ul li ul li a:hover {
   margin: 0 auto;
 }
 
-/* CARDS CONTAINER */
 .our-working-now-con {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -1149,7 +1149,6 @@ ul li ul li a:hover {
           
 }
 
-/* INDIVIDUAL CARD */
 .our-working {
   border-radius: 15px;
   width: 350px;
@@ -1160,13 +1159,13 @@ ul li ul li a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
-/* CARD COLORS */
+
 .work1 { background: rgb(18, 212, 199); }
 .work2 { background: rgb(237, 89, 89); }
 .work3 { background: rgba(138, 0, 148, 0.769); 
 } 
 
-/* CARD IMAGE */
+
 .our-work-img {
   display: flex;
   justify-content: center;
@@ -1180,7 +1179,6 @@ ul li ul li a:hover {
   object-fit: cover;
 }
 
-/* TEXT INSIDE CARD */
 .our-work-text h2 {
   color: white;
   font-size: 20px;
@@ -1195,7 +1193,6 @@ ul li ul li a:hover {
   margin-bottom: 30px;
 }
 
-/* BUTTON */
 .our-work-text button {
   background: white;
   width: 40px;
@@ -1205,7 +1202,7 @@ ul li ul li a:hover {
   border-radius: 50%;
   font-size: 16px;
   cursor: pointer;
-  color: #0f2239; /* fallback color */
+  color: #0f2239; 
   
 }
 
@@ -1256,14 +1253,12 @@ ul li ul li a:hover {
   overflow: hidden;
 }
 
-/* CONTAINER INSIDE */
 .testimonial-con {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* HEADINGS */
 .testimonial-con h4 {
   color: white;
   text-transform: uppercase;
@@ -1281,7 +1276,6 @@ ul li ul li a:hover {
   margin-bottom: 100px;
 }
 
-/* CARDS CONTAINER */
 .testimonial-cards {
   display: flex;
   justify-content: center;
@@ -1289,7 +1283,6 @@ ul li ul li a:hover {
   gap: 20px;
 }
 
-/* INDIVIDUAL CARD */
 .testimonial-card {
   display: flex;
   flex-direction: column;
@@ -1332,7 +1325,7 @@ ul li ul li a:hover {
   font-size: 16px;
 }
 
-/* --- Profile section --- */
+
 .testimonial-card .testimonial-profile {
   background-color: aliceblue;
   display: flex;
@@ -1387,7 +1380,7 @@ ul li ul li a:hover {
 .agency-container {
  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),url("assets/bg-agency.png") no-repeat center center;
   background-size: cover;
-  width: 100vw;              /* full viewport width */
+  width: 100vw;              
   position: relative;
   left: 50%;
   right: 50%;
@@ -1674,6 +1667,7 @@ ul li ul li a:hover {
 }
 .footer-card .footer-links i{
   color: white;
+  margin-right: 20px;
 }
 .footer-card .footer-links i:hover{
   background-color: rgb(196, 128, 4);
@@ -1750,6 +1744,7 @@ ul li ul li a:hover {
   color: white;
   font-size: 15px;
   cursor: pointer;
+  margin-top: 20px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .footer-back{
