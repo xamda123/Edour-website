@@ -16,9 +16,6 @@
 }
 body{
   font-family: var(--fontFmly);
-  padding-bottom: 1000px;
-   margin: 0;
-   padding: 0;
 
 }
 
@@ -30,7 +27,6 @@ body{
   justify-content: center;
   align-items:center;
   box-shadow: 0 10px 25px rgba(202, 202, 202, 0.6);
-
   position: fixed;
   top: 0;
   left: 0;
@@ -98,11 +94,11 @@ ul li ul li a:hover {
 
 
 .learn-more{
-   background: linear-gradient(135deg, var(--primaryColor), #ff7b00);
+  background: linear-gradient(135deg, var(--primaryColor), #ff7b00);
   border: none;
   border-radius: 50px;
-  width: 160px;
-  height: 48px;
+  width: 170px;
+  height: 50px;
   padding: 10px 32px;
   font-size: 15px;
   cursor: pointer;
@@ -135,29 +131,46 @@ ul li ul li a:hover {
     display: flex;
     justify-content: space-between;
   }
+  .learn-more{
+    display: none;
+  }
+  .logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
  
+}
+@media(max-width:480px){
+  
+
 }
 /* hero */
 
 .hero{
   background: url(assets/image\ copy\ 3.png);
-  padding: 1rem;
   background-repeat: no-repeat;
-  background-size: cover;   /* makes image cover the whole hero */
-  padding: 5rem 2rem;       /* top/bottom spacing */            /* text on top of image */       /* center the content */
+  background-size: cover;   
   display: flex;
   min-height: 100vh;
- align-items: center;
+  align-items: center;
   
+}
+.hero-con{
+  width: 50%;
+  margin-top: 200px;
+  margin-left: 110px;
+  
+
 }
 .hero-con h4{
   color: var(--thirdColor);
-  line-height: 3;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 .hero-con h1{
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: var(--secondColor);
   margin-bottom: 10px;
 }
@@ -166,8 +179,11 @@ ul li ul li a:hover {
   text-decoration: underline;
 }
 .hero-con p{
-  width: 40%;
-  color: var(--secondColor);
+  width: 60%;
+  color: gray;
+  margin-bottom: 80px;
+  font-size: 16px;
+
 }
 .hero-buttons{
  display: flex;
@@ -177,8 +193,8 @@ ul li ul li a:hover {
   background: linear-gradient(135deg, var(--primaryColor), #ff7b00);
   border: none;
   border-radius: 50px;
-  width: 160px;
-  height: 48px;
+  width: 180px;
+  height: 50px;
   padding: 10px 32px;
   font-size: 15px;
   cursor: pointer;
@@ -213,6 +229,7 @@ ul li ul li a:hover {
   margin-bottom: 1.5rem;
   border: none;
   margin-top: 10px;
+  margin-left: 15px;
 
 }
 .btn-vidio::before {
@@ -239,13 +256,46 @@ ul li ul li a:hover {
     width: 90%;
   }
 }
+@media(max-width:480px){
+  .hero-con h1{
+    font-size: 1.5rem;
+  }
+  .hero-con p{
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+  .hero-con .read-more{
+    width: 230px;
+    height: 50px;
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+  .hero-con .btn-vidio{
+      width: 55px;
+      height: 55px;
+      padding: 10px 22px;
+
+    }
+  
+  }
+
 /* grid con */
 
-.con-header{
+.container{
   width: 90%;
   padding: 1rem;
   margin: 20px auto;
+  align-items: center;
 }
+
+/* .con-header{
+  width: 50%;
+  padding: 1rem;
+
+} */
 .con-header h4{
   text-align: center;
   color: cornflowerblue;
@@ -255,9 +305,8 @@ ul li ul li a:hover {
 }
 .con-header h1{
   color: #0f2239;
-  text-align: center;
-
-  
+  text-align: center; 
+  font-size: 2rem;
 }
 .grid-con{
   display: grid;
@@ -280,7 +329,7 @@ ul li ul li a:hover {
   cursor: pointer;
 }
 
-/* Shared hover text + icon styles */
+
 .grid:hover .text-grid h2,
 .grid:hover .text-grid p {
   color: white;
@@ -527,6 +576,28 @@ ul li ul li a:hover {
   .study-flexible-con{
     align-items: flex-start;
   }
+   .study-text h3{
+    margin-top: 10px;
+  }
+}
+@media(max-width:480px){
+   .study-flexible-con {
+    flex-direction: column;
+  }
+  .study-img img {
+    width: 100%;
+  }
+ 
+  .study-button {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .study-text p {
+    width: 100%;
+    font-size: 12px;
+  }
+ 
+
 }
 
 /* Our About Us */
@@ -548,6 +619,7 @@ ul li ul li a:hover {
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
+  margin-right: 50px;
 }
 .about-us-text img{
   width: 80px;
@@ -596,6 +668,9 @@ ul li ul li a:hover {
   margin-top: 20px;
 
 }
+/* .about-us-img img{
+  width: 55vw;
+} */
 .about-us-img {
   position: relative;
  
@@ -610,15 +685,22 @@ ul li ul li a:hover {
   right: -80px;
   animation: floatBubble 5s ease-in-out infinite;
 }
-.about-us-pen{
-  position: absolute;
-  bottom: -20px;
-  left: -20px;
-  width: 100px;
-  height: auto;
-  animation: rotatePen 30s linear infinite;
-  /* transform: rotate(-20deg); */
+.about-us-text .about-us-pen img{
+  width: 40px;
+  margin-bottom: 20px;
 }
+.about-us-text .about-us-pen{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%); 
+  margin-left: -220px;
+  margin-top: 50px;
+  animation: rotatePen 30s linear infinite;
+  
+}
+
+
 @keyframes rotatePen {
   0% {
     transform: rotate(0deg);
@@ -657,26 +739,10 @@ ul li ul li a:hover {
   animation: floatBubble 5s ease-in-out infinite;
   /* z-index: 1 */
 }
-
-/* @keyframes floatBubble {
-  0% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(-25px) scale(1.05);
-    opacity: 0.9;
-  }
-  100% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-} */
-
-
 @media(max-width:990px){
    .about-us-con{
     flex-direction: column;
+    gap: 30px;
   }
   .about-us-text img{
    display: none;
@@ -699,6 +765,30 @@ ul li ul li a:hover {
   .dot-slide-right{
       top: -40px;
       right: -50px;
+  }
+
+}
+@media(max-width:480px){
+   .about-us-text h1{
+    font-size: 1.5rem;
+  }
+  .about-us-text h4{
+    font-size: 16px;
+  }
+  .about-us-text p{
+    width: 100%;
+    font-size: 12px;
+  }
+   .dot-slide-right{
+      top: -40px;
+      right: -30px;
+      
+  }
+  .dot-slide-right img{
+    width: 100px;
+  }
+  .dot-slide-left img{
+    width: 100px;
   }
 
 }
@@ -846,6 +936,22 @@ ul li ul li a:hover {
     row-gap: 20px;
   }
 }
+
+@media(max-width:480px){
+  .events-grid{
+    margin: auto;
+    max-width: 300px;
+    height: 490px;
+    padding: 1rem;
+
+  }
+  .events-text h1{
+  font-size: 1.5rem;
+  margin-top: 15px;
+  
+ }
+
+}
 /* faq section */
 .our-educatiton-faq{
   width: 100%;
@@ -858,6 +964,9 @@ ul li ul li a:hover {
     gap: 60px;
     align-items: flex-start;
 }
+.our-education-img{
+  margin-left: 50px;
+}
 .our-education-img img{
   width: 40vw;
   border-radius: 50%;
@@ -867,31 +976,39 @@ ul li ul li a:hover {
 .our-education-text{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 } 
 .our-education-text h4{
   color: cornflowerblue;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
+  margin-left: 10px;
 }
 .our-education-text h2{
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   color: #0f2239;
   font-weight: bold;
+  margin-left: 10px;
 }
 .our-education-text p{
   color: rgb(96, 96, 96);
   font-size: 14px;
   line-height: 1.5;
   width: 100%;
+  padding: 10px 22px;
+  align-items: flex-start;
+}
+.faq-list{
+  width: 45vw;
+  height: auto;
 }
 .faq-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
   margin-top: 30px;
-  width: 100%;
+  /* width: 100%; */
 
 }
 .faq-list li i {
@@ -904,7 +1021,7 @@ ul li ul li a:hover {
   border-radius: 50%;
   margin-right: 15px;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   background-color: #4582ff;
   transition: transform 0.3s ease;
 }
@@ -957,6 +1074,38 @@ ul li ul li a:hover {
 
 }
 
+@media(max-width:480px){
+      .our-education-text h4 {
+        font-size: 14px;
+        
+     }
+      .our-education-text h2{
+          font-size: 1.3rem;
+          margin-bottom: 15px;
+          margin-top: 10px;
+      }
+      .our-education-text p{
+          font-size: 12px;
+          line-height: 1.2;
+          width: 100%;
+      }
+      .faq-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 30px;
+        width: 100%;
+
+      }
+      .faq-list li i {        
+        width: 30px;                    
+        height: 30px;
+        font-size: 24px; 
+      
+      }
+
+}
+
 
 
 
@@ -983,7 +1132,7 @@ ul li ul li a:hover {
 }
 
 .our-working-now-text h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #0f2239;
   max-width: 700px;
   line-height: 1.3;
@@ -1027,22 +1176,23 @@ ul li ul li a:hover {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 10px solid white;
   object-fit: cover;
 }
 
 /* TEXT INSIDE CARD */
-
 .our-work-text h2 {
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .our-work-text p {
   color: white;
   font-size: 14px;
   line-height: 1.6;
   margin: 10px 0 20px;
+  margin-bottom: 30px;
 }
 
 /* BUTTON */
@@ -1344,15 +1494,16 @@ ul li ul li a:hover {
   text-align: center;
   color: #007bff;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .blog-con h1 {
   text-align: center;
   color: var(--secondColor);
   font-weight: bold;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
 }
 
 .blog-cards {
@@ -1410,12 +1561,13 @@ ul li ul li a:hover {
 .card h2 {
   color: var(--secondColor);
   margin-left: 10px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin-top: 15px;
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 10px;
   margin-top: 10px;
   color: #676767;
@@ -1444,7 +1596,7 @@ ul li ul li a:hover {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 10px;
+  font-size: 8px;
   margin-left: 5px; 
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
