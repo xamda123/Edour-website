@@ -1667,7 +1667,7 @@ ul li ul li a:hover {
 }
 .footer-card .footer-links i{
   color: white;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 .footer-card .footer-links i:hover{
   background-color: rgb(196, 128, 4);
@@ -1729,6 +1729,7 @@ ul li ul li a:hover {
   outline: none;
   background-color: #fff;
   color: #333;
+  margin-top: 20px;
 }
 
 .newsletter-card form button {
@@ -1744,7 +1745,6 @@ ul li ul li a:hover {
   color: white;
   font-size: 15px;
   cursor: pointer;
-  margin-top: 20px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .footer-back{
