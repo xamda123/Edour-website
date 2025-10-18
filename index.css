@@ -182,7 +182,7 @@ ul li ul li a:hover {
   width: 60%;
   color: gray;
   margin-bottom: 80px;
-  font-size: 16px;
+  font-size: 14px;
 
 }
 .hero-buttons{
@@ -1729,7 +1729,6 @@ ul li ul li a:hover {
   outline: none;
   background-color: #fff;
   color: #333;
-  margin-top: 10px;
 }
 
 .newsletter-card form button {
